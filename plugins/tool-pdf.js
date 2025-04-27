@@ -12,7 +12,7 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        if (!q) return reply("Please provide the text you want to convert to PDF. *Eg* `.topdf` *Pakistan ZindaBad 🇵🇰*");
+        if (!q) return reply("Please provide the text you want to convert to PDF. *Eg* `.topdf` * ඔයා කැමති දේ දාන්න *");
 
         // Create a new PDF document
         const doc = new PDFDocument();
@@ -25,7 +25,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             await conn.sendMessage(from, {
                 document: pdfData,
                 mimetype: 'application/pdf',
-                fileName: 'JawadTech.pdf',
+                fileName: 'chamindu.pdf',
                 caption: `
 *📄 PDF created successully!*
 
